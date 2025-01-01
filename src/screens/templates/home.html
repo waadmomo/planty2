@@ -1,106 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>Planty - Qatar Plant Helper</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&amp;display=swap" rel="stylesheet"/>
-  <style>
-    .bg-custom-green {
-      background-color: #00A550;
-    }
-    .bg-light-green {
-      background-color: #DFFFD6;
-    }
-    .bg-pastel-yellow {
-      background-color: #FFFACD;
-    }
-    .font-pacifico {
-      font-family: 'Pacifico', cursive;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="/static/css/tailwind.css" rel="stylesheet">
 </head>
-<body class="font-roboto bg-gray-100">
-  <header class="bg-custom-green text-white p-4">
-    <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold font-pacifico">Planty</h1>
-      <nav>
-        <ul class="flex space-x-4">
-          <li><a class="hover:underline" href="#">Home</a></li>
-          <li><a class="hover:underline" href="#">About</a></li>
-          <li><a class="hover:underline" href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main class="container mx-auto p-4">
-    <section class="mb-8">
-      <h2 class="text-xl font-bold mb-4">Choose a Plant</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        <div class="bg-white p-4 rounded shadow">
-          <img alt="A detailed image of a pepper plant with green leaves and red peppers" class="w-full h-40 object-cover rounded mb-2" height="200" src="https://storage.googleapis.com/a1aa/image/MKmqiafU0g1lHSghou9NGedgiG29jUrAr9pJsbKNzg27fgBoA.jpg" width="300"/>
-          <h3 class="text-lg font-bold">Peppers</h3>
-          <p class="text-gray-600">
-            <span class="bg-pastel-yellow px-2 py-1 rounded text-black">Moderately easy to plant</span>
-            : Requires consistent watering and warm temperatures.
-          </p>
-          <a href="/details/peppers" class="view-details-btn mt-2 bg-custom-green text-white px-4 py-2 rounded">View Details</a>
-        </div>
-        <div class="bg-white p-4 rounded shadow">
-          <img alt="A detailed image of a tomato plant with red tomatoes and green leaves" class="w-full h-40 object-cover rounded mb-2" height="200" src="https://storage.googleapis.com/a1aa/image/bbEOeXfivyhHQEuxFaKjGijZyWfwKfm3NauFgJ4BeS47fHMAF.jpg" width="300"/>
-          <h3 class="text-lg font-bold">Tomatoes</h3>
-          <p class="text-gray-600">
-            <span class="bg-pastel-yellow px-2 py-1 rounded text-black">Moderately easy to plant</span>
-            : Needs full sun and regular pruning.
-          </p>
-          <a href="/details/tomatoes" class="view-details-btn mt-2 bg-custom-green text-white px-4 py-2 rounded">View Details</a>
-        </div>
-        <div class="bg-white p-4 rounded shadow">
-          <img alt="A detailed image of an aloe vera plant with thick green leaves" class="w-full h-40 object-cover rounded mb-2" height="200" src="https://storage.googleapis.com/a1aa/image/KRyAc5sJfUTnOSY0YidtCcII1nbX4L2hvRK03GipwDkefgBoA.jpg" width="300"/>
-          <h3 class="text-lg font-bold">Aloe Vera</h3>
-          <p class="text-gray-600">
-            <span class="bg-light-green px-2 py-1 rounded text-black">Easy to plant</span>
-            : Requires minimal watering and indirect sunlight.
-          </p>
-          <a href="/details/aloe_vera" class="view-details-btn mt-2 bg-custom-green text-white px-4 py-2 rounded">View Details</a>
-        </div>
-        <div class="bg-white p-4 rounded shadow">
-          <img alt="A detailed image of a snake plant with tall green leaves" class="w-full h-40 object-cover rounded mb-2" height="200" src="https://storage.googleapis.com/a1aa/image/34xryiffgrtXUEy5gYZFYpehbVtVnva1wM9K5LjsafvLACDQB.jpg" width="300"/>
-          <h3 class="text-lg font-bold">Snake Plant</h3>
-          <p class="text-gray-600">
-            <span class="bg-light-green px-2 py-1 rounded text-black">Easy to plant</span>
-            : Tolerates low light and infrequent watering.
-          </p>
-          <a href="/details/snake_plant" class="view-details-btn mt-2 bg-custom-green text-white px-4 py-2 rounded">View Details</a>
-        </div>
-        <div class="bg-white p-4 rounded shadow">
-          <img alt="A detailed image of a lavender plant with purple flowers and green stems" class="w-full h-40 object-cover rounded mb-2" height="200" src="https://storage.googleapis.com/a1aa/image/AJIHtgsevjUkciemx7XSFQAUMwhLpISclWOHsLeLidfCACDQB.jpg" width="300"/>
-          <h3 class="text-lg font-bold">Lavender</h3>
-          <p class="text-gray-600">
-            <span class="bg-pastel-yellow px-2 py-1 rounded text-black">Moderately easy to plant</span>
-            : Prefers well-drained soil and full sun.
-          </p>
-          <a href="/details/lavender" class="view-details-btn mt-2 bg-custom-green text-white px-4 py-2 rounded">View Details</a>
-        </div>
-        <div class="bg-white p-4 rounded shadow">
-          <img alt="A detailed image of a mint plant with fresh green leaves" class="w-full h-40 object-cover rounded mb-2" height="200" src="https://storage.googleapis.com/a1aa/image/5Hd4pmgxcLr2HB4z9m7owTjQIu7XBmjGt6hpEfyxsC28PYAKA.jpg" width="300"/>
-          <h3 class="text-lg font-bold">Mint</h3>
-          <p class="text-gray-600">
-            <span class="bg-light-green px-2 py-1 rounded text-black">Easy to plant</span>
-            : Grows quickly and requires regular watering.
-          </p>
-          <a href="/details/mint" class="view-details-btn mt-2 bg-custom-green text-white px-4 py-2 rounded">View Details</a>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="bg-custom-green text-white p-4 mt-8">
-    <div class="container mx-auto text-center">
-      <p>© 2025 Planty. All rights reserved.</p>
-    </div>
-  </footer>
+<body>
+    <h1 class="text-customGreen">Welcome to Planty 2</h1>
+    <a href="/details/peppers">Details about Peppers</a>
 </body>
 </html>
